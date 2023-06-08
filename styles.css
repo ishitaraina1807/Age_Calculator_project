@@ -31,8 +31,29 @@ body {
 }
 .input{
     height: 56px;
-    width: 128px;
+    width: 108px;
     border-radius: 5px;
     border-color: hsl(0, 0%, 86%);
-    outline: none;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 2.2rem;
+    color: hsl(0, 0%, 8%);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+}
+input::placeholder {
+    font-size: 2.2rem;
+    color: hsl(0, 1%, 44%);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input :hover{
+  cursor: pointer;
+  color: hsl(259, 100%, 65%);
 }
