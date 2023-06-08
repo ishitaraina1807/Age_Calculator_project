@@ -1,0 +1,38 @@
+body {
+    background-color:hsl(0, 0%, 94%) ;
+}
+.main{
+    background-color: hsl(0, 0%, 100%);
+    width: 640px;
+    height: 450px;
+    margin: auto;
+    margin-top : 110px;
+    border-radius: 25px;
+    border-bottom-right-radius: 200px;
+    padding:55px ;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    gap: 155px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    color: hsl(0, 1%, 44%);
+    font-weight: bold;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px;
+    padding-left: 0px;
+}
+.input{
+    height: 56px;
+    width: 128px;
+    border-radius: 5px;
+    border-color: hsl(0, 0%, 86%);
+    outline: none;
+}
