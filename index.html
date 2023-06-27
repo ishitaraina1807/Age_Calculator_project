@@ -20,32 +20,27 @@
 
     <title>Frontend Mentor | Age calculator app</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <main> 
-      <div class="main">          <!--flex-column-->
-
-        <div class="row1">        <!--flex-row-->
-          <div class="day1">DAY</div>
-          <div class="month1">MONTH</div>
-          <div class="year1">YEAR</div>
+    <main>
+      <div class="container">
+        <div class="input_container">
+        <div>
+          <div class="title">DAY</div>
+          <input type="number" class="input" placeholder="DD" />
         </div>
-        <div class="row2">        <!--flex-row-->
-          <input type="number" class= "input" placeholder="DD">
-          <input type="number" class= "input" placeholder="MM">
-          <input type="number" class= "input" placeholder="YYYY">
           
+          <div>
+            <div class="title">MONTH</div>
+            <input type="number" class="input" placeholder="MM" />
+          </div>
+          <div>
+            <div class="title">YEAR</div>
+            <input type="number" class="input" placeholder="YYYY" />
+          </div>
         </div>
+        <hr> 
+        <div><img class="arrow-icon" src="/assets/images/icon-arrow.svg" alt="icon-arrow"></div>
       </div>
     </main>
   </body>
