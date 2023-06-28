@@ -61,6 +61,7 @@ hr{
 }
 .arrow-icon{
     width: 2rem;
+    background-color: var(--purple);
 }
 input::placeholder {
     font-size: 1.5rem;
