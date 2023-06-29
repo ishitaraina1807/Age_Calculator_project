@@ -1,11 +1,12 @@
-:root{
---purple: hsl(259, 100%, 65%);
---lightred: hsl(0, 100%, 67%);
---offwhite: hsl(0, 0%, 94%);
---Lightgrey: hsl(0, 0%, 86%);
---Smokeygrey: hsl(0, 1%, 44%);
---Offblack: hsl(0, 0%, 8%);
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --lightred: hsl(0, 100%, 67%);
+    --offwhite: hsl(0, 0%, 94%);
+    --Lightgrey: hsl(0, 0%, 86%);
+    --Smokeygrey: hsl(0, 1%, 44%);
+    --Offblack: hsl(0, 0%, 8%);
 }
+
 *,
 *::before,
 *::after {
@@ -13,6 +14,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: var(--offwhite);
     font-family: 'Poppins', sans-serif;
@@ -36,12 +38,14 @@ body {
     gap: 2rem;
     font-weight: bolder;
 }
-.title{
+
+.title {
     font-size: 0.7rem;
     letter-spacing: 0.3rem;
     color: var(--Smokeygrey);
     font-weight: 700;
 }
+
 .input {
     margin-top: 0.6rem;
     height: 3.5rem;
@@ -53,21 +57,20 @@ body {
     color: var(--Offblack);
     padding: 1rem;
     font-family: 'Poppins', sans-serif;
+    font-weight: 800;
 }
-hr{
-    margin-top: 2.5rem;
-    border: solid 1px var(--Lightgrey);
-    width: 32rem;
-}
-.arrow-icon{
-    width: 2rem;
-    background-color: var(--purple);
-}
+
 input::placeholder {
     font-size: 1.5rem;
     color: var(--Smokeygrey);
-    font-weight: bolder;
+    font-weight: 800;
     font-family: 'Poppins', sans-serif;
+    opacity: 1;
+}
+
+input:focus {
+    outline: none;
+    border: solid 2px hsl(259, 100%, 65%);
 }
 
 input::-webkit-outer-spin-button,
@@ -75,7 +78,50 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 input:hover {
     cursor: pointer;
-     border-color: var(--purple);
+    border-color: var(--purple);
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+hr {
+    border: solid 1px var(--offwhite);
+    flex-grow: 1;
+}
+
+#submit_btn {
+    background-color: var(--purple);
+    border: none;
+    flex-grow: 0;
+    border-radius: 50%;
+    padding: 15px;
+    width: 77px;
+    height: 77px;
+}
+
+#submit_btn:hover {
+    background-color: var(--Offblack);
+    width: 81px;
+    height: 81px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.output-label {
+    font-weight: 800;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.output-label>b {
+    color: var(--purple);
+}
+.output-container{
+    line-height: 5.4rem;
 }
