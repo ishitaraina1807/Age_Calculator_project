@@ -19,7 +19,6 @@
     />
 
     <title>Age calculator app</title>
-    <script src=""></script>
   </head>
   <body>
     <main>
@@ -27,7 +26,7 @@
         <div class="input_container">
           <div>
             <div class="title">DAY</div>
-            <input type="number" class="input" placeholder="DD" />
+            <input type="number" id="date" class="input" placeholder="DD" />
             <br>
           <small id="day-error-label" class="error-label" >
             </small>
@@ -35,14 +34,14 @@
 
           <div>
             <div class="title">MONTH</div>
-            <input type="number" class="input" placeholder="MM" />
+            <input type="number" id="month" class="input" placeholder="MM" />
             <br>
           <small id="month-error-label" class="error-label" >
             </small>
           </div>
           <div>
             <div class="title">YEAR</div>
-            <input type="number" class="input" placeholder="YYYY" />
+            <input type="number" id="year" class="input" placeholder="YYYY" />
             <br>
           <small id="year-error-label" class="error-label" >
             </small>
@@ -65,5 +64,7 @@
         </section>
       </div>
     </main>
+    <script src="./app/script.js">
+    </script>
   </body>
 </html>
